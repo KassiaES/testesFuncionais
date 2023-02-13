@@ -16,7 +16,7 @@ public class BuscaStepDefinition {
     @Dado("que usuario acessa página home")
     public void que_usuario_acessa_página_home() {
         //WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "C:\\src\\test\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\PC\\Desktop\\code studies\\testesFuncionais\\src\\test\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.google.com");
     }
