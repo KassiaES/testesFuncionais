@@ -1,5 +1,6 @@
 package ada.teste.funcional.steps;
 
+import io.cucumber.java.After;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.E;
 import io.cucumber.java.it.Quando;
@@ -12,6 +13,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BuscaStepDefinition {
 
     WebDriver driver;
+    @After()
+    public void closeBrowser() {
+        driver.quit();
+    }
 
     @Dado("que usuario acessa página home")
     public void que_usuario_acessa_página_home() {
